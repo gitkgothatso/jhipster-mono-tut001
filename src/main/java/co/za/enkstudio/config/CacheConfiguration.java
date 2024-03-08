@@ -48,6 +48,18 @@ public class CacheConfiguration {
             createCache(cm, co.za.enkstudio.domain.User.class.getName());
             createCache(cm, co.za.enkstudio.domain.Authority.class.getName());
             createCache(cm, co.za.enkstudio.domain.User.class.getName() + ".authorities");
+            createCache(cm, co.za.enkstudio.domain.Region.class.getName());
+            createCache(cm, co.za.enkstudio.domain.Country.class.getName());
+            createCache(cm, co.za.enkstudio.domain.Location.class.getName());
+            createCache(cm, co.za.enkstudio.domain.Department.class.getName());
+            createCache(cm, co.za.enkstudio.domain.Department.class.getName() + ".employees");
+            createCache(cm, co.za.enkstudio.domain.Task.class.getName());
+            createCache(cm, co.za.enkstudio.domain.Task.class.getName() + ".jobs");
+            createCache(cm, co.za.enkstudio.domain.Employee.class.getName());
+            createCache(cm, co.za.enkstudio.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, co.za.enkstudio.domain.Job.class.getName());
+            createCache(cm, co.za.enkstudio.domain.Job.class.getName() + ".tasks");
+            createCache(cm, co.za.enkstudio.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
