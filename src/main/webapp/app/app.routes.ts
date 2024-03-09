@@ -7,9 +7,22 @@ import { errorRoute } from './layouts/error/error.route';
 import HomeComponent from './home/home.component';
 import NavbarComponent from './layouts/navbar/navbar.component';
 import LoginComponent from './login/login.component';
+import { AppLayoutComponent } from './layout/app.layout.component';
+import AppComponent from './app.component';
 
 const routes: Routes = [
   {
+    path: '',
+    component: AppLayoutComponent,
+    children: [
+      {
+        path: '',
+        component: AppComponent,
+        title: 'home.title',
+      },
+    ],
+  },
+  /*{
     path: '',
     component: HomeComponent,
     title: 'home.title',
@@ -39,7 +52,7 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import(`./entities/entity.routes`),
-  },
+  },*/
   ...errorRoute,
 ];
 

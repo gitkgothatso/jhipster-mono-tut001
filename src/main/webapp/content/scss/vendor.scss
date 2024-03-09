@@ -9,4 +9,11 @@ eg $input-color: red;
 // Import Bootstrap source files from node_modules
 @import 'bootstrap/scss/bootstrap';
 
+@import 'content/layout/styles/layout/layout.scss';
+
+/* PrimeNG */
+@import 'primeng/resources/primeng.min.css';
+@import 'primeflex/primeflex.scss';
+@import 'primeicons/primeicons.css';
+
 /* jhipster-needle-scss-add-vendor JHipster will add new css style */

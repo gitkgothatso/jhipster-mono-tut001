@@ -8,6 +8,7 @@ import FindLanguageFromKeyPipe from './language/find-language-from-key.pipe';
 import TranslateDirective from './language/translate.directive';
 import { AlertComponent } from './alert/alert.component';
 import { AlertErrorComponent } from './alert/alert-error.component';
+import { AppLayoutModule } from '../layout/app.layout.module';
 
 /**
  * Application wide Module

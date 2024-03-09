@@ -9,13 +9,15 @@ import { NgbDatepickerConfig } from '@ng-bootstrap/ng-bootstrap';
 import { ApplicationConfigService } from 'app/core/config/application-config.service';
 import { fontAwesomeIcons } from './config/font-awesome-icons';
 import MainComponent from './layouts/main/main.component';
+import { AppLayoutComponent } from './layout/app.layout.component';
 
 @Component({
   selector: 'jhi-app',
   standalone: true,
-  template: '<jhi-main></jhi-main>',
+  template: '<app-layout></app-layout>',
   imports: [
-    MainComponent,
+    /* MainComponent,*/
+    AppLayoutComponent,
     // jhipster-needle-angular-add-module JHipster will add new module here
   ],
 })
